@@ -8,8 +8,20 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'inicio',
     pathMatch: 'full'
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
+  },
+  {
+    path: 'foro',
+    loadChildren: () => import('./pages/foro/foro.component').then( m => m.ForoComponent)
+  },
+  {
+    path: 'galeria',
+    loadChildren: () => import('./pages/galeria/galeria.component').then( m => m.GaleriaComponent)
   },
 ];
 
