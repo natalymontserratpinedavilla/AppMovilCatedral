@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title> Foro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- NUEVA PUBLICACIÓN -->
+  <ion-card class="publicacion-card">
+    <ion-card-header>
+      <ion-card-title class="titulo-publicacion">
+        Nueva Publicación
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-item class="input-item">
+        <ion-input
+          label="Título de tu publicación"
+          labelPlacement="floating"
+          type="text">
+        </ion-input>
+      </ion-item>
+
+      <ion-item class="input-item">
+        <ion-textarea
+          label="Comparte tus pensamientos..."
+          labelPlacement="floating"
+          autoGrow="true">
+        </ion-textarea>
+      </ion-item>
+
+      <ion-button expand="block" class="btn-publicar">
+        PUBLICAR
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+  <!-- MENSAJE PUBLICADO -->
+  <ion-card class="mensaje-card">
+    <ion-card-header>
+      <ion-card-title>Mensaje 1 — Título</ion-card-title>
+      <ion-card-subtitle>Usuario</ion-card-subtitle>
+      <ion-card-subtitle>Fecha</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>Descripción del mensaje...</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
